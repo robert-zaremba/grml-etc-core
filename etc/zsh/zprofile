@@ -13,3 +13,8 @@
 # nothing yet
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=4
+
+if [[ -z "$PATH" || "$PATH" == "/bin:/usr/bin" ]]
+then
+	export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games"
+fi
